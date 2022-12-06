@@ -21,6 +21,30 @@
   <title>Tutta colpa di Json</title>
 </head>
 <body>
-  
+  <div id="app">
+
+    <header>
+      <div class="container" id="header-container">
+        <div class="header-left">
+          <img src="https://pluspng.com/img-png/spotify-logo-png-open-2000.png" alt="">
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div id="discs-container">
+
+
+          <div v-for="(disc, index) in discList" :key="index" class="disc">
+            <img :src="disc.poster" :alt="disc.title">
+            <h3>{{ disc.title }}</h3>
+            <small>{{ disc.author }}</small> 
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
