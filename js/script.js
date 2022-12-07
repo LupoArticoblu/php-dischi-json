@@ -9,7 +9,7 @@ createApp({
       discList: []
     }
   },
-  method:{
+  methods:{
     getDiscs(){
       axios.get(this.apiUrl)
       .then(r => {
